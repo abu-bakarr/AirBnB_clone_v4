@@ -16,7 +16,6 @@ $(document).ready(function() {
       Status API
     */
     $.getJSON('http://0.0.0.0:5001/api/v1/status/', function(data) {
-        /* console.log(data.status); */
         if (data.status === 'OK') {
             $('header div#api_status').removeClass('not-available').addClass('available');
         }
